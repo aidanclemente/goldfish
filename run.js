@@ -1,11 +1,13 @@
+var shortid = require("shortid");
+
 $("#submitReservation").on("click", function(event) {
     event.preventDefault();
 
     var newReservation = {
-        customerName: $("#name").val().trim(),
+        name: $("#name").val().trim(),
         phoneNumber: $("#phoneNumber").val().trim(),
-        customerEmail: $('#email').val().trim(),
-        customerID: $('#uniqueID').val().trim()
+        email: $('#email').val().trim(),
+        uniquerID: (shortid.generate())
     };
 
     console.log(newReservation);
