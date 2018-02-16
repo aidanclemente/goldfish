@@ -52,6 +52,12 @@
                         <label for="age">Email</label>
                         <input type="text" class="form-control" id="email">
                         </div>
+
+                        <div class="form-group">
+                            <label for="age">Unique ID</label>
+                            <input type="text" class="form-control" id="uniqueID">
+                        </div>
+                
         
                     </form>
                     <br>
@@ -75,23 +81,23 @@
     <script>
 
        $(".submit").on("click", function(event) {
-    event.preventDefault();
-    console.log("KDFHJOWETH00");
-    var newReservation = {
-        name: $("#name").val().trim(),
-        phoneNumber: $("#phoneNumber").val().trim(),
-        email: $('#email').val().trim(),
-        // uniquerID: (shortid.generate())
-    };
+            event.preventDefault();
 
-    console.log(newReservation);
+            var newReservation = {
+                name: $("#name").val().trim(),
+                phoneNumber: $("#phoneNumber").val().trim(),
+                email: $('#email').val().trim(),
+                uniquerID: $('#uniqueID').val().trim()
+            };
 
-    $.post("/api/new", newReservation)
-    .then(function(data) {
-      console.log(data);
-      alert("Adding reservations...");
-    });
-  });     
+            console.log(newReservation);
+
+            $.post("/api/new", newReservation)
+            .then(function(data) {
+            console.log(data);
+            alert("Adding reservations...");
+            });
+        });     
     </script>
     </body>
 </html>
