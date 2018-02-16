@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Goldfish Prezel</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        </head>
+    <body>
+        <div class="container">
+
+            <div class="container text-center">
+                <div class="jumbotron">
+                    <h1><i class="fab fa-gitkraken"></i> Goldfish Pretzel</h1>
+                    <h3>The Best Restaurant for Kids at Heart</h3>
+                    <hr>
+                    <a href="/"><button type="button" class="btn btn-default btn-lg"><i class="fas fa-home"></i></button></a>
+                    <a href="/tables">
+                        <button type="button" class="btn btn-primary btn-lg"><i class="fas fa-list-alt"></i> View Tables</button>
+                    </a>              
+                </div>
+            </div>
+
+            <div class="row">
+        
+                <div class="col-lg-12">
+        
+                <div class="card card-default">
+                    <div class="card-header">
+                    <h3 class="card-title"><strong>Table Reservation</strong></h3>
+                    </div>
+                    <div class="card-body">
+                    <form method="POST" role="form">
+        
+                        <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name">
+                        </div>
+        
+                        <div class="form-group">
+                        <label for="role">Phone Number</label>
+                        <input type="text" class="form-control" id="phoneNumber">
+                        </div>
+        
+                        <div class="form-group">
+                        <label for="age">Email</label>
+                        <input type="text" class="form-control" id="email">
+                        </div>
+        
+                        <div class="form-group">
+                        <label for="force-points">Unique ID</label>
+                        <input type="text" class="form-control" id="uniqueID">
+                        </div>
+        
+                    </form>
+                    <br>
+                    <div class="text-left">
+                        <button type="submit" class="btn btn-primary btn-md" id="submitReservation"><span class="glyphicon glyphicon-fire"></span> Submit</button>
+                    </div>
+                    </div>
+                </div>
+        
+                </div>
+            </div>
+        
+        <footer class="text-left">
+                <a href="/api/tables">API Table Link</a> | 
+                <a href="/api/waitlist">API Waitlist</a>
+        </footer>
+    </div>
+     <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="run.js"></script>
+    <script type="text/javascript" src="server.js"></script>
+    </body>
+</html>
