@@ -31,5 +31,15 @@ $("#submitReservation").on("click", function(event) {
 
 });
 
+function clearTable() {
+    var currentURL = window.location.origin;
+    $.ajax({url: currentURL + "/api/clear", method: "POST"})
+}
+
+$("#clear").on("click", function() {
+    alert("Clearing...");
+    clearTable();
+});
+
     // If reservations is > 5 then put them on the wait list
 

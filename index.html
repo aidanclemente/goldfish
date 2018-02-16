@@ -34,3 +34,40 @@ API Table Link /api/tables
 
 API Wait List /api/waitlist
     shows the objects of the wait list  -->
+    <!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Goldfish Pretzel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container text-center">
+            <div class="jumbotron">
+                <h1><i class="fab fa-gitkraken"></i> Goldfish Pretzel</h1>
+                <h3>The Best Restaurant for Kids at Heart</h3>
+                <hr>
+                <a href="/tables">
+                    <button type="button" class="btn btn-primary btn-lg" id="viewTables"><i class="fas  fa-list-alt"></i> View Tables</button>
+                </a>
+                <a href="/reserve">
+                    <button type="button" class="btn btn-danger btn-lg" id="makeReservation"><i class="fas fa-clipboard"></i> Make Reservation</button>
+                </a>
+            </div>
+            <footer class="text-left">
+                <a href="/api/tables">API Table Link</a> | 
+                <a href="/api/waitlist">API Waitlist</a>
+            </footer>
+        </div>
+
+
+        <script type="text/javascript" src="run.js"></script>
+    </body>
+</html>
