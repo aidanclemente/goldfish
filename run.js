@@ -1,8 +1,8 @@
 var shortid = require("shortid");
 
-$("#submitReservation").on("click", function(event) {
+$(".submit").on("click", function(event) {
     event.preventDefault();
-
+    console.log("KDFHJOWETH00");
     var newReservation = {
         name: $("#name").val().trim(),
         phoneNumber: $("#phoneNumber").val().trim(),
@@ -12,26 +12,12 @@ $("#submitReservation").on("click", function(event) {
 
     console.log(newReservation);
 
-    $.post("/api/tables", newReservation,
-    function(data){
-        // If a table is available... tell user they are booked.
-        if(data == true){
-            alert("Your reservation has been made!")
-        }
-        // If a table is available... tell user they on the waiting list.
-        if(data == false){
-            alert("Sorry, you are on the wait list")
-        }
-        // Clear the form when submitting
-        $('#name').val("");
-        $('#phoneNumber').val("");
-        $('#email').val("");
-        $('#uniqueID').val("");
+    $.post("/api/new", newReservation)
+    .then(function(data) {
+      console.log(data);
+      alert("Adding reservations...");
     });
-
-    return false;
-
-});
+  });
 
 function clearTable() {
     var currentURL = window.location.origin;

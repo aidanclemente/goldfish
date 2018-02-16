@@ -9,6 +9,8 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
             <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+            <script type="text/javascript" src="run.js"></script>
+            <script type="text/javascript" src="server.js"></script>
         </head>
     <body>
         <div class="container">
@@ -54,7 +56,7 @@
                     </form>
                     <br>
                     <div class="text-left">
-                        <button type="submit" class="btn btn-primary btn-md" id="submitReservation"><span class="glyphicon glyphicon-fire"></span> Submit</button>
+                        <button type="submit" class="btn btn-primary btn-md submit" id="submitReservation"><span class="glyphicon glyphicon-fire"></span> Submit</button>
                     </div>
                     </div>
                 </div>
@@ -63,14 +65,11 @@
             </div>
         
         <footer class="text-left">
-                <a href="/api/tables">API Table Link</a> | 
-                <a href="/api/waitlist">API Waitlist</a>
+                <a href="/reservations">API Table Link</a> | 
+                <a href="/waitlist">API Waitlist</a>
         </footer>
     </div>
-     <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="run.js"></script>
     <script type="text/javascript" src="server.js"></script>
     <script>
