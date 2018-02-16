@@ -1,23 +1,23 @@
 var shortid = require("shortid");
 
-$(".submit").on("click", function(event) {
-    event.preventDefault();
-    console.log("KDFHJOWETH00");
-    var newReservation = {
-        name: $("#name").val().trim(),
-        phoneNumber: $("#phoneNumber").val().trim(),
-        email: $('#email').val().trim(),
-        uniquerID: (shortid.generate())
-    };
+// $(".submit").on("click", function(event) {
+//     event.preventDefault();
+//     console.log("KDFHJOWETH00");
+//     var newReservation = {
+//         name: $("#name").val().trim(),
+//         phoneNumber: $("#phoneNumber").val().trim(),
+//         email: $('#email').val().trim(),
+//         uniquerID: (shortid.generate())
+//     };
 
-    console.log(newReservation);
+//     console.log(newReservation);
 
-    $.post("/api/new", newReservation)
-    .then(function(data) {
-      console.log(data);
-      alert("Adding reservations...");
-    });
-  });
+//     $.post("/api/new", newReservation)
+//     .then(function(data) {
+//       console.log(data);
+//       alert("Adding reservations...");
+//     });
+//   });
 
 function clearTable() {
     var currentURL = window.location.origin;
